@@ -4,7 +4,7 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 export const personal = {
-  name:       'Alex Morgan',
+  name:       'John Smith',
   title:      'Senior Software Engineer',
   summary:    'Building scalable, cloud-native products that reach millions of users.',
   email:      'alex.morgan@example.com',
