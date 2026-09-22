@@ -1,4 +1,4 @@
-# John Smith — Portfolio Website
+# John Smith — Portfolio Website (Completed in 60 MIN)
 
 A professional, fully responsive single-page portfolio built with **React 19** and **Material UI v9**. Dark-themed, accessible, and 100 % open-source dependencies.
 
