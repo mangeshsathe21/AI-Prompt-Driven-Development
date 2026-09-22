@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import {
   Box, Container, Typography, Grid, Card, CardContent,
-  CardActions, Chip, Button, Stack,
+  CardActions, Chip, Button, Stack, Tooltip,
 } from '@mui/material';
 import LaunchIcon from '@mui/icons-material/Launch';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -81,29 +81,33 @@ export default function Projects() {
 
                 <CardActions sx={{ px: 2, pb: 2, pt: 0, gap: 1 }}>
                   {project.live && (
+                    <Tooltip title={`Open live demo of ${project.title}`} arrow>
+                      <Button
+                        variant="outlined"
+                        size="small"
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        startIcon={<LaunchIcon sx={{ fontSize: '0.9rem !important' }} />}
+                        aria-label={`Live demo of ${project.title}`}
+                      >
+                        Live Demo
+                      </Button>
+                    </Tooltip>
+                  )}
+                  <Tooltip title={`View source code of ${project.title} on GitHub`} arrow>
                     <Button
-                      variant="outlined"
+                      variant={project.live ? 'text' : 'outlined'}
                       size="small"
-                      href={project.live}
+                      href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      startIcon={<LaunchIcon sx={{ fontSize: '0.9rem !important' }} />}
-                      aria-label={`Live demo of ${project.title}`}
+                      startIcon={<GitHubIcon sx={{ fontSize: '0.9rem !important' }} />}
+                      aria-label={`GitHub repository for ${project.title}`}
                     >
-                      Live Demo
+                      GitHub
                     </Button>
-                  )}
-                  <Button
-                    variant={project.live ? 'text' : 'outlined'}
-                    size="small"
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    startIcon={<GitHubIcon sx={{ fontSize: '0.9rem !important' }} />}
-                    aria-label={`GitHub repository for ${project.title}`}
-                  >
-                    GitHub
-                  </Button>
+                  </Tooltip>
                 </CardActions>
               </Card>
             </Grid>

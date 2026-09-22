@@ -4,9 +4,23 @@ A professional, fully responsive single-page portfolio built with **React 19** a
 
 ---
 
+## Screenshot
+
+![Portfolio home page](docs/screenshots/homepage.png)
+
+> **To update this screenshot:**
+> 1. Start the dev server — `npm run dev`
+> 2. Open **http://localhost:5173** in your browser
+> 3. Take a full-page screenshot (browser DevTools → Ctrl+Shift+P → "Capture full size screenshot", or use a tool like [Greenshot](https://getgreenshot.org/) / [ShareX](https://getsharex.com/))
+> 4. Save the file as **`docs/screenshots/homepage.png`** (replace the placeholder)
+> 5. Commit the image — it will appear here automatically
+
+---
+
 ## Table of Contents
 
 - [Live Preview](#live-preview)
+- [Screenshot](#screenshot)
 - [Tech Stack](#tech-stack)
 - [Dependencies & Licences](#dependencies--licences)
 - [Project Structure](#project-structure)

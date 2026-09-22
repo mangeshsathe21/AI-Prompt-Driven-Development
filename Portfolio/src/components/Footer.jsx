@@ -39,7 +39,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <Typography variant="caption" sx={{ color: C.body, opacity: 0.7 }}>
-            © {YEAR} {personal.name}. Built with React &amp; MUI.
+            © {YEAR} MANGESH SATHE. Built with React &amp; MUI.
           </Typography>
 
           {/* Social icons */}
