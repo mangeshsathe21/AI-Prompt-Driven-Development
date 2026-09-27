@@ -8,10 +8,10 @@ I built and shipped a fully responsive React 19 and Material UI v9 portfolio sit
 
 ## Screenshot Desktop
 
-![Portfolio home page](/docs/screenshots/homepage.png)
+![Portfolio home page](/Portfolio/docs/screenshots/homepage.png)
 
 ---
 
 ## Screenshot iPhone
 
-![Portfolio home page](/docs/screenshots/ihomepage.png)
+![Portfolio home page](/Portfolio/docs/screenshots/ihomepage.png)
